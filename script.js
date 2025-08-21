@@ -121,6 +121,83 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     }
 
+    // Hero Image Slider Functionality
+    const heroCarousel = document.getElementById('heroCarousel');
+    
+    if (heroCarousel) {
+        // Initialize Bootstrap carousel
+        const carousel = new bootstrap.Carousel(heroCarousel, {
+            interval: 6000,
+            wrap: true,
+            keyboard: true,
+            pause: 'hover'
+        });
+        
+        // Enhanced hover effects for hero carousel controls
+        const heroControls = document.querySelectorAll('.hero-control');
+        heroControls.forEach(control => {
+            control.addEventListener('mouseenter', () => {
+                control.style.transform = 'scale(1.1)';
+            });
+            
+            control.addEventListener('mouseleave', () => {
+                control.style.transform = 'scale(1)';
+            });
+        });
+        
+        // Auto-play with pause on hover
+        let autoPlayInterval;
+        
+        const startAutoPlay = () => {
+            autoPlayInterval = setInterval(() => {
+                carousel.next();
+            }, 6000);
+        };
+        
+        const stopAutoPlay = () => {
+            clearInterval(autoPlayInterval);
+        };
+        
+        // Start auto-play
+        startAutoPlay();
+        
+        // Pause on hover
+        heroCarousel.addEventListener('mouseenter', stopAutoPlay);
+        heroCarousel.addEventListener('mouseleave', startAutoPlay);
+        
+        // Pause on touch for mobile
+        heroCarousel.addEventListener('touchstart', stopAutoPlay);
+        heroCarousel.addEventListener('touchend', startAutoPlay);
+    }
+    
+    // Enhanced hero slider animations
+    const heroItems = document.querySelectorAll('#heroCarousel .carousel-item');
+    heroItems.forEach((item, index) => {
+        item.addEventListener('transitionend', () => {
+            if (item.classList.contains('active')) {
+                const heroContent = document.querySelector('.hero-content');
+                if (heroContent) {
+                    heroContent.style.animation = 'none';
+                    heroContent.offsetHeight; // Trigger reflow
+                    heroContent.style.animation = 'slideInUp 0.8s ease-out';
+                }
+            }
+        });
+    });
+    
+    // Keyboard navigation for hero slider
+    document.addEventListener('keydown', (e) => {
+        if (heroCarousel) {
+            if (e.key === 'ArrowLeft') {
+                const prevButton = heroCarousel.querySelector('.carousel-control-prev');
+                if (prevButton) prevButton.click();
+            } else if (e.key === 'ArrowRight') {
+                const nextButton = heroCarousel.querySelector('.carousel-control-next');
+                if (nextButton) nextButton.click();
+            }
+        }
+    });
+
     // Alert function
     function showAlert(message, type) {
         const alertDiv = document.createElement('div');

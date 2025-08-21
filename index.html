@@ -82,93 +82,115 @@
 
     <!-- Hero Section -->
     <section id="home" class="hero-section">
-        <div class="hero-overlay">
-            <div class="container">
-                <div class="row min-vh-100 align-items-center">
-                    <div class="col-lg-6">
-                        <div class="hero-content text-white">
-                            <h1 class="display-3 fw-bold mb-4">Faisal Town 2</h1>
-                            <h2 class="h3 mb-4">Where Luxury Meets Location</h2>
-                            <p class="lead mb-5">Premium residential plots from 5.5 Marla to 2 Kanal | Strategic location with M-2 & Ring Road access | 20% Lump-Sum Discount Available</p>
-                            
-                            <div class="proximity-details mb-4">
-                                <h5 class="mb-3">Prime Location Benefits:</h5>
-                                <ul class="list-unstyled">
-                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>0 min from Thalian Interchange</li>
-                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>0 min from Rawalpindi Ring Road</li>
-                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>3 min from Islamabad Intl. Airport</li>
-                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>5 min from Srinagar Highway</li>
-                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>10 min from Main Chakri Road</li>
-                                </ul>
-                            </div>
-                            
-                            <div class="d-flex flex-column flex-sm-row gap-3">
-                                <a href="#contact" class="btn btn-primary btn-lg px-5 py-3">
-                                    <i class="fas fa-calendar-check me-2"></i>Book Your Plot Now
-                                </a>
-                                <a href="#payment" class="btn btn-outline-light btn-lg px-5 py-3">
-                                    <i class="fas fa-calculator me-2"></i>View Payment Plan
-                                </a>
-                            </div>
+        <!-- Hero Image Slider Background -->
+        <div class="hero-slider-background">
+            <div id="heroCarousel" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="hero-slide" style="background-image: url('af5c456b-ce1a-4b09-b9bd-cca032a5487d.jpeg');">
+                            <div class="hero-slide-overlay"></div>
                         </div>
                     </div>
-                    <div class="col-lg-6">
-                        <div class="booking-form-card">
-                            <div class="card border-0 shadow-lg">
-                                <div class="card-header bg-primary text-white text-center">
-                                    <h4 class="mb-0">FILL THIS FORM TO BOOK YOUR PLOT</h4>
+                    <div class="carousel-item">
+                        <div class="hero-slide" style="background-image: url('a0250d8a-c0fb-4787-a01e-ac179ed83cfe.jpeg');">
+                            <div class="hero-slide-overlay"></div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="hero-slide" style="background-image: url('dd5ef4f1-90ef-4017-9096-07ce2672a0b5.jpeg');">
+                            <div class="hero-slide-overlay"></div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Hero Carousel Controls -->
+                <button class="carousel-control-prev hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next hero-control" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="visually-hidden">Next</span>
+                </button>
+                
+                <!-- Hero Carousel Indicators -->
+                <div class="carousel-indicators hero-indicators">
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                    <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Hero Content Overlay -->
+        <div class="hero-content-overlay">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-2"></div>
+                    <div class="col-8">
+                        <div class="hero-content text-center mb-3">
+                            <!-- Main Title -->
+                            <h1 class="hero-main-title">Faisal Town Phase 2</h1>
+                        </div>
+                        <div class="booking-form-container">
+                            <div class="booking-form-card">
+                                <div class="form-header">
+                                    <h4 class="form-title">FILL THIS FORM TO BOOK YOUR PLOT</h4>
                                 </div>
-                                <div class="card-body p-4">
+                                <div class="form-body">
                                     <form>
-                                        <div class="mb-3">
-                                            <label for="name" class="form-label">Please Enter Your Name *</label>
-                                            <input type="text" class="form-control" id="name" required>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" placeholder="Please Enter Your Name" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control" placeholder="Please Enter Your Phone Number" required>
+                                            </div>
+                                            <div class="form-group">
+                                                <input type="tel" class="form-control" placeholder="Please Enter WhatsApp Number">
+                                            </div>
+                                            <div class="form-group">
+                                                <select class="form-select">
+                                                    <option value="">Your Are Interested In?</option>
+                                                    <option value="residential">Residential</option>
+                                                    <option value="commercial">Commercial</option>
+                                                    <option value="overseas">Overseas Enclave</option>
+                                                </select>
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="phone" class="form-label">Please Enter Your Phone Number *</label>
-                                            <input type="tel" class="form-control" id="phone" required>
+                                        <div class="form-row">
+                                            <div class="form-group">
+                                                <select class="form-select">
+                                                    <option value="">Plot Size You Looking For?</option>
+                                                    <option value="5.56-marla">5.56 Marla</option>
+                                                    <option value="8-marla">8 Marla</option>
+                                                    <option value="10.89-marla">10.89 Marla</option>
+                                                    <option value="14.22-marla">14.22 Marla</option>
+                                                    <option value="1-kanal">1 Kanal</option>
+                                                    <option value="2-kanal">2 Kanal</option>
+                                                </select>
+                                            </div>
+                                            <div class="form-group message-group">
+                                                <input type="text" class="form-control" placeholder="Enter Your Message">
+                                            </div>
+                                            <div class="form-group submit-group">
+                                                <button type="submit" class="btn btn-primary submit-btn">
+                                                    SUBMIT
+                                                </button>
+                                            </div>
                                         </div>
-                                        <div class="mb-3">
-                                            <label for="whatsapp" class="form-label">Please Enter WhatsApp Number</label>
-                                            <input type="tel" class="form-control" id="whatsapp">
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="plotSize" class="form-label">Plot Size You Looking For?</label>
-                                            <select class="form-select" id="plotSize">
-                                                <option value="">Select plot size</option>
-                                                <option value="5.56-marla">5.56 Marla</option>
-                                                <option value="8-marla">8 Marla</option>
-                                                <option value="10.89-marla">10.89 Marla</option>
-                                                <option value="14.22-marla">14.22 Marla</option>
-                                                <option value="1-kanal">1 Kanal</option>
-                                                <option value="2-kanal">2 Kanal</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="interest" class="form-label">You Are Interested In?</label>
-                                            <select class="form-select" id="interest">
-                                                <option value="">Select interest</option>
-                                                <option value="residential">Residential Plot</option>
-                                                <option value="commercial">Commercial Plot</option>
-                                                <option value="overseas">Overseas Enclave</option>
-                                            </select>
-                                        </div>
-                                        <div class="mb-3">
-                                            <label for="message" class="form-label">Enter Your Message</label>
-                                            <textarea class="form-control" id="message" rows="3" placeholder="Tell us about your requirements..."></textarea>
-                                        </div>
-                                        <button type="submit" class="btn btn-primary btn-lg w-100">
-                                            <i class="fas fa-paper-plane me-2"></i>SUBMIT
-                                        </button>
                                     </form>
                                 </div>
                             </div>
                         </div>
                     </div>
+                    <div class="col-2"></div>
                 </div>
             </div>
         </div>
     </section>
+
+
 
     <!-- WhatsApp Floating Button -->
     <div class="whatsapp-float">
@@ -178,7 +200,7 @@
     </div>
 
     <!-- About Section -->
-    <section id="about" class="py-5">
+    <section id="about" class="py-4">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6">
@@ -273,111 +295,64 @@
                 </div>
             </div>
             
-            <!-- Proximity Cards -->
-            <div class="row g-4 mb-5">
+            <!-- Proximity & Connectivity Section -->
+            <div class="row mb-5">
                 <div class="col-12">
-                    <h3 class="text-center text-primary mb-4">Proximity & Connectivity</h3>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="proximity-card text-center p-4 bg-white rounded-3 shadow-sm border-0">
-                        <div class="proximity-icon mb-3">
-                            <i class="fas fa-plane fa-3x text-primary"></i>
+                    <div class="section-subheader text-center mb-5">
+                        <div class="luxury-badge mb-3">
+                            <span class="badge bg-gradient-primary px-4 py-2">
+                                <i class="fas fa-star me-2"></i>PREMIUM LOCATION
+                            </span>
                         </div>
-                        <h5 class="text-primary mb-2">Islamabad International Airport</h5>
-                        <div class="proximity-badge mb-3">
-                            <span class="badge bg-success fs-6">3 minutes</span>
-                        </div>
-                        <p class="text-muted small mb-0">Direct access via Thalian Interchange</p>
+                        <h3 class="display-4 fw-bold text-primary mb-3">Proximity & Connectivity</h3>
+                        <p class="lead text-muted">Where luxury meets accessibility - strategic positioning for the discerning investor</p>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="proximity-card text-center p-4 bg-white rounded-3 shadow-sm border-0">
-                        <div class="proximity-icon mb-3">
-                            <i class="fas fa-road fa-3x text-primary"></i>
-                        </div>
-                        <h5 class="text-primary mb-2">M-2 Motorway</h5>
-                        <div class="proximity-badge mb-3">
-                            <span class="badge bg-success fs-6">Direct Access</span>
-                        </div>
-                        <p class="text-muted small mb-0">Thalian Interchange connection</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="proximity-card text-center p-4 bg-white rounded-3 shadow-sm border-0">
-                        <div class="proximity-icon mb-3">
-                            <i class="fas fa-circle fa-3x text-primary"></i>
-                        </div>
-                        <h5 class="text-primary mb-2">Rawalpindi Ring Road</h5>
-                        <div class="proximity-badge mb-3">
-                            <span class="badge bg-info fs-6">9-11 KM Frontage</span>
-                        </div>
-                        <p class="text-muted small mb-0">Multiple access points</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6">
-                    <div class="proximity-card text-center p-4 bg-white rounded-3 shadow-sm border-0">
-                        <div class="proximity-icon mb-3">
-                            <i class="fas fa-building fa-3x text-primary"></i>
-                        </div>
-                        <h5 class="text-primary mb-2">Blue Area Islamabad</h5>
-                        <div class="proximity-badge mb-3">
-                            <span class="badge bg-warning fs-6">~20 minutes</span>
-                        </div>
-                        <p class="text-muted small mb-0">Business district access</p>
-                    </div>
-                </div>
-            </div>
-            
-            <!-- Location Features -->
-            <div class="row g-4">
-                <div class="col-lg-8">
-                    <div class="card border-0 shadow-lg">
-                        <div class="card-header bg-gradient-primary text-white">
-                            <h4 class="mb-0"><i class="fas fa-map-marked-alt me-2"></i>Location Highlights</h4>
-                        </div>
-                        <div class="card-body p-4">
-                            <div class="row g-4">
-                                <div class="col-md-6">
-                                    <div class="feature-item d-flex align-items-start">
-                                        <div class="feature-icon me-3">
-                                            <i class="fas fa-check-circle text-success fa-2x"></i>
+                
+                <!-- Luxury Proximity Showcase -->
+                <div class="col-12 mb-5">
+                    <div class="luxury-proximity-hero">
+                        <div class="proximity-hero-background">
+                            <div class="proximity-hero-overlay">
+                                <div class="container">
+                                    <div class="row align-items-center">
+                                        <div class="col-lg-6">
+                                            <div class="proximity-hero-content">
+                                                <h2 class="text-white display-5 fw-bold mb-4">Strategic Excellence</h2>
+                                                <p class="text-white-50 lead mb-4">Positioned at the crossroads of major transportation arteries, Faisal Town 2 offers unparalleled connectivity to Islamabad's most prestigious destinations.</p>
+                                                <div class="proximity-stats-grid">
+                                                    <div class="stat-item">
+                                                        <div class="stat-number">3</div>
+                                                        <div class="stat-label">Minutes to Airport</div>
+                                                    </div>
+                                                    <div class="stat-item">
+                                                        <div class="stat-number">12</div>
+                                                        <div class="stat-label">KM Motorway Frontage</div>
+                                                    </div>
+                                                    <div class="stat-item">
+                                                        <div class="stat-number">20</div>
+                                                        <div class="stat-label">Minutes to Blue Area</div>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
-                                        <div>
-                                            <h6 class="text-primary mb-2">Dual Highway Access</h6>
-                                            <p class="text-muted small mb-0">Direct access via M-2 Motorway and Ring Road</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="feature-item d-flex align-items-start">
-                                        <div class="feature-icon me-3">
-                                            <i class="fas fa-check-circle text-success fa-2x"></i>
-                                        </div>
-                                        <div>
-                                            <h6 class="text-primary mb-2">Airport Proximity</h6>
-                                            <p class="text-muted small mb-0">Just 3 minutes from Islamabad International Airport</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="feature-item d-flex align-items-start">
-                                        <div class="feature-icon me-3">
-                                            <i class="fas fa-check-circle text-success fa-2x"></i>
-                                        </div>
-                                        <div>
-                                            <h6 class="text-primary mb-2">Business Connectivity</h6>
-                                            <p class="text-muted small mb-0">Easy access to major business districts</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="col-md-6">
-                                    <div class="feature-item d-flex align-items-start">
-                                        <div class="feature-icon me-3">
-                                            <i class="fas fa-check-circle text-success fa-2x"></i>
-                                        </div>
-                                        <div>
-                                            <h6 class="text-primary mb-2">Scenic Views</h6>
-                                            <p class="text-muted small mb-0">Beautiful views of Margalla Hills</p>
+                                        <div class="col-lg-6">
+                                            <div class="proximity-hero-visual">
+                                                <div class="floating-proximity-cards">
+                                                    <div class="floating-card airport-card">
+                                                        <i class="fas fa-plane"></i>
+                                                        <span>Airport</span>
+                                                    </div>
+                                                    <div class="floating-card motorway-card">
+                                                        <i class="fas fa-road"></i>
+                                                        <span>M-2</span>
+                                                    </div>
+                                                    <div class="floating-card ringroad-card">
+                                                        <i class="fas fa-circle"></i>
+                                                        <span>Ring Road</span>
+                                                    </div>
+                                                </div>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -385,33 +360,267 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card border-0 shadow-lg h-100">
-                        <div class="card-header bg-gradient-secondary text-white">
-                            <h4 class="mb-0"><i class="fas fa-star me-2"></i>Why This Location?</h4>
+                
+                <!-- Premium Proximity Cards -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="luxury-proximity-card airport-premium">
+                        <div class="card-glow-effect"></div>
+                        <div class="proximity-card-header">
+                            <div class="proximity-icon-wrapper">
+                                <div class="proximity-icon-bg">
+                                    <i class="fas fa-plane"></i>
+                                </div>
+                            </div>
+                            <div class="proximity-badge-premium">
+                                <span class="badge-premium">3 MIN</span>
+                            </div>
                         </div>
-                        <div class="card-body p-4">
-                            <div class="location-benefits">
-                                <div class="benefit-item mb-3">
-                                    <div class="benefit-icon mb-2">
-                                        <i class="fas fa-trophy text-warning fa-2x"></i>
-                                    </div>
-                                    <h6 class="text-primary">Prime Investment Location</h6>
-                                    <p class="text-muted small">High appreciation potential due to strategic positioning</p>
+                        <div class="proximity-card-body">
+                            <h4 class="proximity-title">Islamabad International Airport</h4>
+                            <p class="proximity-description">Direct access via Thalian Interchange with seamless connectivity for international travelers</p>
+                            <div class="proximity-features-premium">
+                                <div class="feature-tag">
+                                    <i class="fas fa-route"></i>
+                                    <span>Direct Route</span>
                                 </div>
-                                <div class="benefit-item mb-3">
-                                    <div class="benefit-icon mb-2">
-                                        <i class="fas fa-shield-alt text-success fa-2x"></i>
-                                    </div>
-                                    <h6 class="text-primary">RDA Approved</h6>
-                                    <p class="text-muted small">Legally compliant development under RDA jurisdiction</p>
+                                <div class="feature-tag">
+                                    <i class="fas fa-clock"></i>
+                                    <span>24/7 Access</span>
                                 </div>
-                                <div class="benefit-item">
-                                    <div class="benefit-icon mb-2">
-                                        <i class="fas fa-leaf text-info fa-2x"></i>
+                            </div>
+                        </div>
+                        <div class="proximity-card-footer">
+                            <div class="distance-indicator">
+                                <div class="distance-bar">
+                                    <div class="distance-fill" style="width: 15%"></div>
+                                </div>
+                                <span class="distance-text">Ultra Close</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="luxury-proximity-card motorway-premium">
+                        <div class="card-glow-effect"></div>
+                        <div class="proximity-card-header">
+                            <div class="proximity-icon-wrapper">
+                                <div class="proximity-icon-bg">
+                                    <i class="fas fa-road"></i>
+                                </div>
+                            </div>
+                            <div class="proximity-badge-premium">
+                                <span class="badge-premium">DIRECT</span>
+                            </div>
+                        </div>
+                        <div class="proximity-card-body">
+                            <h4 class="proximity-title">M-2 Motorway</h4>
+                            <p class="proximity-description">Thalian Interchange connection with 12 KM frontage access for seamless travel</p>
+                            <div class="proximity-features-premium">
+                                <div class="feature-tag">
+                                    <i class="fas fa-car"></i>
+                                    <span>Highway Access</span>
+                                </div>
+                                <div class="feature-tag">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                    <span>12 KM Frontage</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proximity-card-footer">
+                            <div class="distance-indicator">
+                                <div class="distance-bar">
+                                    <div class="distance-fill" style="width: 100%"></div>
+                                </div>
+                                <span class="distance-text">Direct Access</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="luxury-proximity-card ringroad-premium">
+                        <div class="card-glow-effect"></div>
+                        <div class="proximity-card-header">
+                            <div class="proximity-icon-wrapper">
+                                <div class="proximity-icon-bg">
+                                    <i class="fas fa-circle"></i>
+                                </div>
+                            </div>
+                            <div class="proximity-badge-premium">
+                                <span class="badge-premium">9-11 KM</span>
+                            </div>
+                        </div>
+                        <div class="proximity-card-body">
+                            <h4 class="proximity-title">Rawalpindi Ring Road</h4>
+                            <p class="proximity-description">Multiple access points with comprehensive connectivity throughout the region</p>
+                            <div class="proximity-features-premium">
+                                <div class="feature-tag">
+                                    <i class="fas fa-exchange-alt"></i>
+                                    <span>Multiple Points</span>
+                                </div>
+                                <div class="feature-tag">
+                                    <i class="fas fa-network-wired"></i>
+                                    <span>Network Access</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proximity-card-footer">
+                            <div class="distance-indicator">
+                                <div class="distance-bar">
+                                    <div class="distance-fill" style="width: 60%"></div>
+                                </div>
+                                <span class="distance-text">Excellent</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-3 col-md-6 mb-4">
+                    <div class="luxury-proximity-card business-premium">
+                        <div class="card-glow-effect"></div>
+                        <div class="proximity-card-header">
+                            <div class="proximity-icon-wrapper">
+                                <div class="proximity-icon-bg">
+                                    <i class="fas fa-building"></i>
+                                </div>
+                            </div>
+                            <div class="proximity-badge-premium">
+                                <span class="badge-premium">~20 MIN</span>
+                            </div>
+                        </div>
+                        <div class="proximity-card-body">
+                            <h4 class="proximity-title">Blue Area Islamabad</h4>
+                            <p class="proximity-description">Business district access with premium commercial connectivity and opportunities</p>
+                            <div class="proximity-features-premium">
+                                <div class="feature-tag">
+                                    <i class="fas fa-briefcase"></i>
+                                    <span>Business Hub</span>
+                                </div>
+                                <div class="feature-tag">
+                                    <i class="fas fa-chart-line"></i>
+                                    <span>Growth Area</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="proximity-card-footer">
+                            <div class="distance-indicator">
+                                <div class="distance-bar">
+                                    <div class="distance-fill" style="width: 80%"></div>
+                                </div>
+                                <span class="distance-text">Very Good</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Enhanced Connectivity Features -->
+            <div class="row">
+                <div class="col-lg-8 mb-4">
+                    <div class="luxury-connectivity-showcase">
+                        <div class="connectivity-header-premium">
+                            <h3 class="display-5 fw-bold text-primary mb-3">Strategic Connectivity Advantages</h3>
+                            <p class="lead text-muted mb-4">Our location provides unmatched access to key infrastructure and destinations</p>
+                        </div>
+                        <div class="connectivity-grid-premium">
+                            <div class="connectivity-item-premium">
+                                <div class="connectivity-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-route"></i>
                                     </div>
-                                    <h6 class="text-primary">Natural Surroundings</h6>
-                                    <p class="text-muted small">Serene environment with urban convenience</p>
+                                </div>
+                                <div class="connectivity-details-premium">
+                                    <h5>Dual Highway Access</h5>
+                                    <p>Direct access via M-2 Motorway and Ring Road with multiple entry points for maximum convenience</p>
+                                </div>
+                            </div>
+                            <div class="connectivity-item-premium">
+                                <div class="connectivity-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-plane-departure"></i>
+                                    </div>
+                                </div>
+                                <div class="connectivity-details-premium">
+                                    <h5>Airport Proximity</h5>
+                                    <p>Just 3 minutes from Islamabad International Airport via dedicated route for international connectivity</p>
+                                </div>
+                            </div>
+                            <div class="connectivity-item-premium">
+                                <div class="connectivity-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-city"></i>
+                                    </div>
+                                </div>
+                                <div class="connectivity-details-premium">
+                                    <h5>Business Connectivity</h5>
+                                    <p>Easy access to major business districts and commercial centers for professional opportunities</p>
+                                </div>
+                            </div>
+                            <div class="connectivity-item-premium">
+                                <div class="connectivity-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-mountain"></i>
+                                    </div>
+                                </div>
+                                <div class="connectivity-details-premium">
+                                    <h5>Scenic Views</h5>
+                                    <p>Beautiful panoramic views of Margalla Hills and natural landscapes for premium living experience</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="col-lg-4 mb-4">
+                    <div class="luxury-location-benefits">
+                        <div class="benefits-header-premium">
+                            <h3 class="display-5 fw-bold text-primary mb-3">Location Benefits</h3>
+                            <p class="lead text-muted mb-4">Why this strategic location is perfect for your investment</p>
+                        </div>
+                        <div class="benefits-list-premium">
+                            <div class="benefit-item-premium">
+                                <div class="benefit-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-trophy"></i>
+                                    </div>
+                                </div>
+                                <div class="benefit-content-premium">
+                                    <h5>Prime Investment Location</h5>
+                                    <p>High appreciation potential due to strategic positioning and planned infrastructure</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item-premium">
+                                <div class="benefit-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-chart-line"></i>
+                                    </div>
+                                </div>
+                                <div class="benefit-content-premium">
+                                    <h5>Future Growth Potential</h5>
+                                    <p>Located in rapidly developing sector with planned infrastructure and amenities</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item-premium">
+                                <div class="benefit-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-shield-alt"></i>
+                                    </div>
+                                </div>
+                                <div class="benefit-content-premium">
+                                    <h5>Legal Compliance</h5>
+                                    <p>NOC with RDA in final approval stage as of 2025 ensuring secure investment</p>
+                                </div>
+                            </div>
+                            <div class="benefit-item-premium">
+                                <div class="benefit-icon-premium">
+                                    <div class="icon-bg">
+                                        <i class="fas fa-leaf"></i>
+                                    </div>
+                                </div>
+                                <div class="benefit-content-premium">
+                                    <h5>Eco-Friendly Design</h5>
+                                    <p>Sustainable development with green belts and parks for premium living environment</p>
                                 </div>
                             </div>
                         </div>
