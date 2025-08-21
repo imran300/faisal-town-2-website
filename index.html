@@ -17,6 +17,28 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Top Contact Bar -->
+    <div class="top-contact-bar">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-md-6">
+                    <div class="contact-info">
+                        <span><i class="fas fa-phone me-2"></i>+92 333 111 3864</span>
+                        <span class="ms-4"><i class="fas fa-map-marker-alt me-2"></i>Office No. 29-30, 1st Floor, Al-Anayat Mall, G-11 Markaz, Islamabad</span>
+                    </div>
+                </div>
+                <div class="col-md-6 text-end">
+                    <div class="social-links">
+                        <a href="#" class="me-3"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="me-3"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- Navigation -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow-sm">
         <div class="container">
@@ -53,6 +75,7 @@
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
+                <a href="#contact" class="btn btn-primary ms-3">BOOK NOW</a>
             </div>
         </div>
     </nav>
@@ -62,48 +85,97 @@
         <div class="hero-overlay">
             <div class="container">
                 <div class="row min-vh-100 align-items-center">
-                    <div class="col-lg-8 col-md-10 mx-auto text-center text-white">
-                        <h1 class="display-3 fw-bold mb-4">Faisal Town 2</h1>
-                        <h2 class="h3 mb-4">Where Luxury Meets Location</h2>
-                        <p class="lead mb-5">Premium residential plots from 5.5 Marla to 2 Kanal | Strategic location with M-2 & Ring Road access | 20% Lump-Sum Discount Available</p>
-                        
-                        <div class="row g-3 mb-5">
-                            <div class="col-md-4">
-                                <div class="feature-card">
-                                    <i class="fas fa-map-marker-alt fa-2x text-primary mb-3"></i>
-                                    <h5>Prime Location</h5>
-                                    <p class="small">Thalian Interchange, direct M-2 Motorway access</p>
-                                </div>
+                    <div class="col-lg-6">
+                        <div class="hero-content text-white">
+                            <h1 class="display-3 fw-bold mb-4">Faisal Town 2</h1>
+                            <h2 class="h3 mb-4">Where Luxury Meets Location</h2>
+                            <p class="lead mb-5">Premium residential plots from 5.5 Marla to 2 Kanal | Strategic location with M-2 & Ring Road access | 20% Lump-Sum Discount Available</p>
+                            
+                            <div class="proximity-details mb-4">
+                                <h5 class="mb-3">Prime Location Benefits:</h5>
+                                <ul class="list-unstyled">
+                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>0 min from Thalian Interchange</li>
+                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>0 min from Rawalpindi Ring Road</li>
+                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>3 min from Islamabad Intl. Airport</li>
+                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>5 min from Srinagar Highway</li>
+                                    <li><i class="fas fa-arrow-right text-warning me-2"></i>10 min from Main Chakri Road</li>
+                                </ul>
                             </div>
-                            <div class="col-md-4">
-                                <div class="feature-card">
-                                    <i class="fas fa-plane fa-2x text-primary mb-3"></i>
-                                    <h5>Airport Proximity</h5>
-                                    <p class="small">Just 3 minutes from Islamabad International Airport</p>
-                                </div>
-                            </div>
-                            <div class="col-md-4">
-                                <div class="feature-card">
-                                    <i class="fas fa-percentage fa-2x text-primary mb-3"></i>
-                                    <h5>Flexible Plans</h5>
-                                    <p class="small">4-5 year installments plus 20% lump-sum discount</p>
-                                </div>
+                            
+                            <div class="d-flex flex-column flex-sm-row gap-3">
+                                <a href="#contact" class="btn btn-primary btn-lg px-5 py-3">
+                                    <i class="fas fa-calendar-check me-2"></i>Book Your Plot Now
+                                </a>
+                                <a href="#payment" class="btn btn-outline-light btn-lg px-5 py-3">
+                                    <i class="fas fa-calculator me-2"></i>View Payment Plan
+                                </a>
                             </div>
                         </div>
-                        
-                        <div class="d-flex flex-column flex-sm-row gap-3 justify-content-center">
-                            <a href="#contact" class="btn btn-primary btn-lg px-5 py-3">
-                                <i class="fas fa-calendar-check me-2"></i>Book Your Plot Now
-                            </a>
-                            <a href="#payment" class="btn btn-outline-light btn-lg px-5 py-3">
-                                <i class="fas fa-calculator me-2"></i>View Payment Plan
-                            </a>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="booking-form-card">
+                            <div class="card border-0 shadow-lg">
+                                <div class="card-header bg-primary text-white text-center">
+                                    <h4 class="mb-0">FILL THIS FORM TO BOOK YOUR PLOT</h4>
+                                </div>
+                                <div class="card-body p-4">
+                                    <form>
+                                        <div class="mb-3">
+                                            <label for="name" class="form-label">Please Enter Your Name *</label>
+                                            <input type="text" class="form-control" id="name" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="phone" class="form-label">Please Enter Your Phone Number *</label>
+                                            <input type="tel" class="form-control" id="phone" required>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="whatsapp" class="form-label">Please Enter WhatsApp Number</label>
+                                            <input type="tel" class="form-control" id="whatsapp">
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="plotSize" class="form-label">Plot Size You Looking For?</label>
+                                            <select class="form-select" id="plotSize">
+                                                <option value="">Select plot size</option>
+                                                <option value="5.56-marla">5.56 Marla</option>
+                                                <option value="8-marla">8 Marla</option>
+                                                <option value="10.89-marla">10.89 Marla</option>
+                                                <option value="14.22-marla">14.22 Marla</option>
+                                                <option value="1-kanal">1 Kanal</option>
+                                                <option value="2-kanal">2 Kanal</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="interest" class="form-label">You Are Interested In?</label>
+                                            <select class="form-select" id="interest">
+                                                <option value="">Select interest</option>
+                                                <option value="residential">Residential Plot</option>
+                                                <option value="commercial">Commercial Plot</option>
+                                                <option value="overseas">Overseas Enclave</option>
+                                            </select>
+                                        </div>
+                                        <div class="mb-3">
+                                            <label for="message" class="form-label">Enter Your Message</label>
+                                            <textarea class="form-control" id="message" rows="3" placeholder="Tell us about your requirements..."></textarea>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary btn-lg w-100">
+                                            <i class="fas fa-paper-plane me-2"></i>SUBMIT
+                                        </button>
+                                    </form>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </section>
+
+    <!-- WhatsApp Floating Button -->
+    <div class="whatsapp-float">
+        <a href="https://wa.me/923331113864" target="_blank" class="whatsapp-btn">
+            <i class="fab fa-whatsapp"></i>
+        </a>
+    </div>
 
     <!-- About Section -->
     <section id="about" class="py-5">
@@ -230,8 +302,8 @@
     <section id="masterplan" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary">Master Plan</h2>
-                <p class="lead">Diversified layout with residential and commercial zones designed for modern living</p>
+                <h2 class="display-5 fw-bold text-primary">Master Plan - Faisal Town 2</h2>
+                <p class="lead">Our visionary master plan, designed by experts, spans over 100,000 Kanals, blending natural beauty and modern amenities</p>
             </div>
             
             <div class="row g-4">
@@ -326,6 +398,36 @@
                     </div>
                 </div>
             </div>
+            
+            <!-- Master Plan Download Section -->
+            <div class="row mt-5">
+                <div class="col-12">
+                    <div class="card border-0 shadow">
+                        <div class="card-body p-5 text-center">
+                            <div class="row align-items-center">
+                                <div class="col-lg-8">
+                                    <h3 class="text-primary mb-3">Download Complete Master Plan</h3>
+                                    <p class="lead mb-4">Get detailed insights into our comprehensive development plan including roads, green areas, and plot divisions.</p>
+                                    <ul class="list-unstyled text-start">
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Detailed plot layouts and dimensions</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Road network and infrastructure plans</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Green spaces and amenity locations</li>
+                                        <li><i class="fas fa-check-circle text-success me-2"></i>Commercial and residential zones</li>
+                                    </ul>
+                                </div>
+                                <div class="col-lg-4">
+                                    <div class="master-plan-preview mb-4">
+                                        <img src="https://images.unsplash.com/photo-1560518883-ce09059eeffa?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80" alt="Master Plan Preview" class="img-fluid rounded shadow">
+                                    </div>
+                                    <a href="#" class="btn btn-primary btn-lg px-5">
+                                        <i class="fas fa-download me-2"></i>DOWNLOAD COMPLETE MASTER PLAN
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -382,85 +484,162 @@
     <section id="payment" class="py-5">
         <div class="container">
             <div class="text-center mb-5">
-                <h2 class="display-5 fw-bold text-primary">Investment Plans</h2>
+                <h2 class="display-5 fw-bold text-primary">Payment Plans</h2>
                 <p class="lead">Flexible payment options with attractive discounts for smart investors</p>
             </div>
             
-            <div class="row g-4">
-                <div class="col-lg-8">
+            <!-- Overseas Enclave Payment Plan -->
+            <div class="row mb-5">
+                <div class="col-12">
                     <div class="card border-0 shadow">
-                        <div class="card-header bg-primary text-white">
-                            <h4 class="mb-0">Model Block (Sector O) – Fresh Booking Rates</h4>
+                        <div class="card-header bg-primary text-white text-center">
+                            <h3 class="mb-0">Payment Plan - Overseas Enclave</h3>
                         </div>
-                        <div class="card-body p-0">
+                        <div class="card-body p-4">
+                            <p class="lead mb-4">Exclusive booking opportunities for overseas Pakistanis with 20% down payment and flexible installment plans.</p>
+                            
                             <div class="table-responsive">
-                                <table class="table table-hover mb-0">
-                                    <thead class="table-light">
+                                <table class="table table-hover">
+                                    <thead class="table-dark">
                                         <tr>
-                                            <th>Plot Size</th>
-                                            <th>Price (PKR)</th>
-                                            <th>Discounted Price</th>
-                                            <th>Action</th>
+                                            <th>PLOT SIZE</th>
+                                            <th>TOTAL PRICE (PKR)</th>
+                                            <th>DOWNPAYMENT (20%)</th>
+                                            <th>12 QUARTERLY INSTALLMENT</th>
+                                            <th>YEARLY INSTALLMENT</th>
+                                            <th>ON LUMP SUM</th>
                                         </tr>
                                     </thead>
                                     <tbody>
                                         <tr>
-                                            <td><strong>5.56 Marla</strong></td>
+                                            <td><strong>5.5 Marla</strong></td>
                                             <td>3,495,000</td>
+                                            <td>699,000</td>
+                                            <td>233,000</td>
+                                            <td>699,000</td>
                                             <td><span class="text-success fw-bold">2,790,000</span></td>
-                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
                                         </tr>
                                         <tr>
                                             <td><strong>8 Marla</strong></td>
                                             <td>4,665,000</td>
+                                            <td>933,000</td>
+                                            <td>311,000</td>
+                                            <td>933,000</td>
                                             <td><span class="text-success fw-bold">3,730,000</span></td>
-                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
                                         </tr>
                                         <tr>
-                                            <td><strong>10.89 Marla</strong></td>
+                                            <td><strong>10 Marla</strong></td>
                                             <td>6,065,000</td>
+                                            <td>1,213,000</td>
+                                            <td>404,000</td>
+                                            <td>1,213,000</td>
                                             <td><span class="text-success fw-bold">4,850,000</span></td>
-                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
                                         </tr>
                                         <tr>
-                                            <td><strong>14.22 Marla</strong></td>
+                                            <td><strong>14 Marla</strong></td>
                                             <td>7,585,000</td>
+                                            <td>1,517,000</td>
+                                            <td>506,000</td>
+                                            <td>1,517,000</td>
                                             <td><span class="text-success fw-bold">6,060,000</span></td>
-                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
                                         </tr>
                                         <tr>
                                             <td><strong>1 Kanal</strong></td>
                                             <td>10,155,000</td>
+                                            <td>2,031,000</td>
+                                            <td>677,000</td>
+                                            <td>2,031,000</td>
                                             <td><span class="text-success fw-bold">8,120,000</span></td>
-                                            <td><button class="btn btn-sm btn-primary">Book Now</button></td>
                                         </tr>
                                     </tbody>
                                 </table>
                             </div>
+                            
+                            <div class="row mt-4">
+                                <div class="col-md-6">
+                                    <div class="alert alert-info">
+                                        <h5><i class="fas fa-info-circle me-2"></i>Payment Terms</h5>
+                                        <ul class="mb-0">
+                                            <li>20% down payment required</li>
+                                            <li>4-5 year flexible installment plans</li>
+                                            <li>No hidden charges</li>
+                                            <li>20% discount on lump sum payment</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="d-flex flex-column gap-3">
+                                        <a href="tel:+923331113864" class="btn btn-primary btn-lg">
+                                            <i class="fas fa-phone me-2"></i>CALL NOW
+                                        </a>
+                                        <a href="https://wa.me/923331113864" target="_blank" class="btn btn-success btn-lg">
+                                            <i class="fab fa-whatsapp me-2"></i>CHAT NOW
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4">
-                    <div class="card border-0 shadow h-100">
+            </div>
+            
+            <!-- Commercial Plots Payment Plan -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="card border-0 shadow">
+                        <div class="card-header bg-secondary text-white text-center">
+                            <h3 class="mb-0">Commercial Plots Payment Plan</h3>
+                        </div>
                         <div class="card-body p-4">
-                            <h4 class="text-primary mb-4">Why This Works for You</h4>
-                            <ul class="list-unstyled">
-                                <li class="mb-3">
-                                    <i class="fas fa-calendar-alt text-primary me-2"></i>
-                                    <strong>Flexible 4–5 year installment plans</strong>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-percentage text-primary me-2"></i>
-                                    <strong>20% discount for lump-sum buyers</strong>
-                                </li>
-                                <li class="mb-3">
-                                    <i class="fas fa-exchange-alt text-primary me-2"></i>
-                                    <strong>Options for both fresh and resale files</strong>
-                                </li>
-                            </ul>
-                            <div class="alert alert-info">
-                                <i class="fas fa-info-circle me-2"></i>
-                                <strong>Overseas Enclave:</strong> Special installment plans with 20% discount available.
+                            <div class="table-responsive">
+                                <table class="table table-hover">
+                                    <thead class="table-secondary">
+                                        <tr>
+                                            <th>SIZE</th>
+                                            <th>PER SQ YD</th>
+                                            <th>PLOT VALUE</th>
+                                            <th>DOWNPAYMENT</th>
+                                            <th>INSTALLMENTS</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><strong>5.33 Marla</strong></td>
+                                            <td>25,000</td>
+                                            <td>3,333,333</td>
+                                            <td>666,667</td>
+                                            <td>222,222</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>8 Marla</strong></td>
+                                            <td>25,000</td>
+                                            <td>5,000,000</td>
+                                            <td>1,000,000</td>
+                                            <td>333,333</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>12.22 Marla</strong></td>
+                                            <td>25,000</td>
+                                            <td>7,638,889</td>
+                                            <td>1,527,778</td>
+                                            <td>509,259</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>13.33 Marla</strong></td>
+                                            <td>25,000</td>
+                                            <td>8,333,333</td>
+                                            <td>1,666,667</td>
+                                            <td>555,556</td>
+                                        </tr>
+                                        <tr>
+                                            <td><strong>2 Kanal</strong></td>
+                                            <td>25,000</td>
+                                            <td>12,500,000</td>
+                                            <td>2,500,000</td>
+                                            <td>833,333</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>
@@ -641,30 +820,37 @@
                 <div class="col-lg-4">
                     <h5 class="text-primary mb-3">Faisal Town 2</h5>
                     <p>Premium housing society offering luxury living with strategic location and unbeatable value. Developed by Zedem International under the guidance of Chaudhry Abdul Majeed.</p>
+                    <div class="social-links mt-3">
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="btn btn-outline-primary me-2"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#" class="btn btn-outline-primary"><i class="fab fa-youtube"></i></a>
+                    </div>
                 </div>
                 <div class="col-lg-2">
-                    <h6 class="text-primary mb-3">Quick Links</h6>
+                    <h6 class="text-primary mb-3">Our Projects</h6>
                     <ul class="list-unstyled">
-                        <li><a href="#home" class="text-white-50 text-decoration-none">Home</a></li>
-                        <li><a href="#about" class="text-white-50 text-decoration-none">About</a></li>
-                        <li><a href="#location" class="text-white-50 text-decoration-none">Location</a></li>
-                        <li><a href="#payment" class="text-white-50 text-decoration-none">Payment Plans</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Faisal Town Phase 2</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Faisal Town Phase 1</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Faisal Hills</a></li>
+                        <li><a href="#" class="text-white-50 text-decoration-none">Faisal Margalla City</a></li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <h6 class="text-primary mb-3">Contact Info</h6>
                     <ul class="list-unstyled">
-                        <li class="mb-2"><i class="fas fa-phone me-2"></i>+92 XXX XXX XXXX</li>
-                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>info@faisaltown2.com</li>
-                        <li><i class="fas fa-map-marker-alt me-2"></i>Sector F-18, Islamabad</li>
+                        <li class="mb-2"><i class="fas fa-map-marker-alt me-2"></i>Office No. 29-30, 1st Floor, Al-Anayat Mall, G-11 Markaz, Islamabad</li>
+                        <li class="mb-2"><i class="fas fa-envelope me-2"></i>sales@faisaltownphase-2.com</li>
+                        <li class="mb-2"><i class="fas fa-phone me-2"></i>+92 333 111 3864</li>
+                        <li><i class="fas fa-clock me-2"></i>Monday – Saturday | 9:00 AM – 6:00 PM</li>
                     </ul>
                 </div>
                 <div class="col-lg-3">
                     <h6 class="text-primary mb-3">Newsletter</h6>
                     <p class="small">Stay updated with our latest developments</p>
                     <div class="input-group">
-                        <input type="email" class="form-control" placeholder="Your email">
-                        <button class="btn btn-primary" type="button">Subscribe</button>
+                        <input type="email" class="form-control" placeholder="Enter Your Email">
+                        <button class="btn btn-primary" type="button">Sign Up</button>
                     </div>
                 </div>
             </div>
