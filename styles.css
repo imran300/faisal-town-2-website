@@ -63,17 +63,19 @@ body {
     padding: 1.25rem 0;
     margin-top: 0;
     box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    min-width: 100%;
 }
 
 .navbar-brand {
     font-family: var(--font-primary);
-    font-size: 2rem;
+    font-size: 1.8rem;
     font-weight: 700;
     color: var(--primary-color) !important;
     letter-spacing: -0.02em;
     display: flex;
     align-items: center;
     gap: 0.5rem;
+    margin-right: 2rem;
 }
 
 .navbar-brand i {
@@ -86,12 +88,13 @@ body {
     color: var(--text-color) !important;
     transition: var(--transition);
     position: relative;
-    padding: 1rem 1.75rem !important;
-    font-size: 0.9rem;
+    padding: 1rem 1.5rem !important;
+    font-size: 0.85rem;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     border-radius: 8px;
-    margin: 0 0.25rem;
+    margin: 0 0.15rem;
+    white-space: nowrap;
 }
 
 .navbar-nav .nav-link:hover {
@@ -199,7 +202,7 @@ body {
     right: 0;
     bottom: 0;
     z-index: 1;
-    margin-top: 80px;
+    margin-top: 40px;
     border-radius: 0;
 }
 
