@@ -188,6 +188,7 @@ body {
     margin-top: 0;
     padding-top: 0;
     overflow: hidden;
+    border-radius: 0;
 }
 
 /* Hero Slider Background */
@@ -199,6 +200,7 @@ body {
     bottom: 0;
     z-index: 1;
     margin-top: 80px;
+    border-radius: 0;
 }
 
 .hero-slide {
@@ -211,6 +213,7 @@ body {
     position: relative;
     min-height: 900px;
     overflow: hidden;
+    border-radius: 0;
 }
 
 .hero-slide-overlay {
@@ -2612,7 +2615,7 @@ footer .btn {
 }
 
 .carousel-item {
-    height: 500px;
+    height: 100%;
     position: relative;
 }
 
