@@ -1088,3 +1088,463 @@ footer .btn {
         margin-bottom: 1rem;
     }
 }
+
+/* Luxury Master Plan Section Styles */
+#masterplan {
+    background: linear-gradient(135deg, #fafafa 0%, #f8f9fa 100%);
+    position: relative;
+}
+
+#masterplan::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background: linear-gradient(90deg, transparent 0%, var(--secondary-color) 50%, transparent 100%);
+}
+
+/* Section Badge */
+.section-badge .badge {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #333 100%);
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    border-radius: 25px;
+    box-shadow: 0 4px 15px rgba(26, 26, 26, 0.2);
+}
+
+/* Master Plan Showcase */
+.master-plan-showcase {
+    position: relative;
+    margin-bottom: 4rem;
+}
+
+.master-plan-image {
+    position: relative;
+    border-radius: 1.5rem;
+    overflow: hidden;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+}
+
+.master-plan-image img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.6s ease;
+}
+
+.master-plan-image:hover img {
+    transform: scale(1.02);
+}
+
+.master-plan-stats {
+    position: absolute;
+    bottom: -2rem;
+    left: 50%;
+    transform: translateX(-50%);
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem;
+    box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(200, 162, 125, 0.1);
+    min-width: 80%;
+}
+
+.stat-item {
+    position: relative;
+}
+
+.stat-item:not(:last-child)::after {
+    content: '';
+    position: absolute;
+    right: -2rem;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 1px;
+    height: 3rem;
+    background: linear-gradient(180deg, transparent 0%, var(--secondary-color) 50%, transparent 100%);
+}
+
+.stat-number {
+    font-size: 2.5rem;
+    font-weight: 700;
+    color: var(--primary-color);
+    line-height: 1;
+    margin-bottom: 0.5rem;
+    font-family: var(--font-primary);
+}
+
+.stat-label {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+.master-plan-cta {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+    z-index: 10;
+}
+
+.master-plan-cta .btn {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    border: none;
+    box-shadow: 0 10px 30px rgba(200, 162, 125, 0.3);
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    text-transform: uppercase;
+    border-radius: 50px;
+    transition: all 0.3s ease;
+}
+
+.master-plan-cta .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 15px 40px rgba(200, 162, 125, 0.4);
+}
+
+/* Section Subheader */
+.section-subheader h3 {
+    font-family: var(--font-primary);
+    font-weight: 600;
+    margin-bottom: 1rem;
+}
+
+.section-subheader p {
+    font-size: 1.1rem;
+    color: var(--text-light);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* Plot Category Cards */
+.plot-category-card {
+    background: white;
+    border-radius: 1rem;
+    padding: 2rem 1.5rem;
+    text-align: center;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+}
+
+.plot-category-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 3px;
+    background: linear-gradient(90deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.plot-category-card:hover::before {
+    transform: scaleX(1);
+}
+
+.plot-category-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
+    border-color: var(--secondary-color);
+}
+
+.plot-icon-wrapper {
+    width: 80px;
+    height: 80px;
+    background: linear-gradient(135deg, rgba(200, 162, 125, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.plot-icon-wrapper i {
+    font-size: 2rem;
+    color: var(--secondary-color);
+    transition: all 0.3s ease;
+}
+
+.plot-category-card:hover .plot-icon-wrapper {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+    transform: scale(1.1);
+}
+
+.plot-category-card:hover .plot-icon-wrapper i {
+    color: white;
+}
+
+.plot-details h5 {
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-family: var(--font-primary);
+}
+
+.plot-details p {
+    font-size: 0.9rem;
+    color: var(--text-light);
+    margin-bottom: 1rem;
+}
+
+.plot-tag {
+    display: inline-block;
+    padding: 0.25rem 0.75rem;
+    border-radius: 15px;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    color: white;
+}
+
+.plot-tag.popular {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.plot-tag.value {
+    background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%);
+}
+
+.plot-tag.premium {
+    background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+}
+
+.plot-tag.luxury {
+    background: linear-gradient(135deg, #dc3545 0%, #e83e8c 100%);
+}
+
+.plot-tag.elite {
+    background: linear-gradient(135deg, #6f42c1 0%, #e83e8c 100%);
+}
+
+.plot-tag.ultimate {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+}
+
+/* Zone Showcase Cards */
+.zone-showcase-card {
+    background: white;
+    border-radius: 1.5rem;
+    padding: 2.5rem;
+    box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+    border: 2px solid transparent;
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    position: relative;
+    overflow: hidden;
+    height: 100%;
+}
+
+.zone-showcase-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    transition: all 0.3s ease;
+}
+
+.zone-showcase-card:hover::before {
+    height: 100%;
+    opacity: 0.05;
+}
+
+.zone-showcase-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 30px 60px rgba(0, 0, 0, 0.15);
+}
+
+/* Zone-specific styling */
+.zone-showcase-card.general-block::before {
+    background: linear-gradient(135deg, var(--primary-color) 0%, #333 100%);
+}
+
+.zone-showcase-card.overseas-enclave::before {
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--accent-color) 100%);
+}
+
+.zone-showcase-card.cbd::before {
+    background: linear-gradient(135deg, #28a745 0%, #20c997 100%);
+}
+
+.zone-showcase-card.lake-city::before {
+    background: linear-gradient(135deg, #17a2b8 0%, #20c997 100%);
+}
+
+.zone-showcase-card.education-city::before {
+    background: linear-gradient(135deg, #ffc107 0%, #fd7e14 100%);
+}
+
+.zone-showcase-card.sports-city::before {
+    background: linear-gradient(135deg, #dc3545 0%, #e83e8c 100%);
+}
+
+.zone-header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.zone-icon {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.zone-showcase-card.general-block .zone-icon {
+    background: linear-gradient(135deg, rgba(26, 26, 26, 0.1) 0%, rgba(51, 51, 51, 0.1) 100%);
+    color: var(--primary-color);
+}
+
+.zone-showcase-card.overseas-enclave .zone-icon {
+    background: linear-gradient(135deg, rgba(200, 162, 125, 0.1) 0%, rgba(212, 175, 55, 0.1) 100%);
+    color: var(--secondary-color);
+}
+
+.zone-showcase-card.cbd .zone-icon {
+    background: linear-gradient(135deg, rgba(40, 167, 69, 0.1) 0%, rgba(32, 201, 151, 0.1) 100%);
+    color: #28a745;
+}
+
+.zone-showcase-card.lake-city .zone-icon {
+    background: linear-gradient(135deg, rgba(23, 162, 184, 0.1) 0%, rgba(32, 201, 151, 0.1) 100%);
+    color: #17a2b8;
+}
+
+.zone-showcase-card.education-city .zone-icon {
+    background: linear-gradient(135deg, rgba(255, 193, 7, 0.1) 0%, rgba(253, 126, 20, 0.1) 100%);
+    color: #ffc107;
+}
+
+.zone-showcase-card.sports-city .zone-icon {
+    background: linear-gradient(135deg, rgba(220, 53, 69, 0.1) 0%, rgba(232, 62, 140, 0.1) 100%);
+    color: #dc3545;
+}
+
+.zone-showcase-card:hover .zone-icon {
+    transform: scale(1.1);
+}
+
+.zone-icon i {
+    font-size: 1.5rem;
+}
+
+.zone-header h4 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    margin: 0;
+    font-family: var(--font-primary);
+}
+
+.zone-showcase-card p {
+    color: var(--text-light);
+    margin-bottom: 1.5rem;
+    line-height: 1.6;
+}
+
+.zone-features {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.zone-features li {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0.75rem;
+    color: var(--text-color);
+    font-size: 0.95rem;
+}
+
+.zone-features li i {
+    color: var(--success-color);
+    margin-right: 0.75rem;
+    font-size: 0.8rem;
+    width: 16px;
+    text-align: center;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .master-plan-stats {
+        position: relative;
+        bottom: 0;
+        left: 0;
+        transform: none;
+        margin-top: 2rem;
+        min-width: 100%;
+    }
+    
+    .stat-item:not(:last-child)::after {
+        display: none;
+    }
+    
+    .master-plan-cta {
+        position: relative;
+        top: 0;
+        right: 0;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .plot-category-card {
+        margin-bottom: 1rem;
+    }
+    
+    .zone-showcase-card {
+        margin-bottom: 1rem;
+    }
+}
+
+/* Enhanced Shadows */
+.shadow-2xl {
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+}
+
+/* Smooth Animations */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.plot-category-card,
+.zone-showcase-card {
+    animation: fadeInUp 0.6s ease forwards;
+}
+
+.plot-category-card:nth-child(1) { animation-delay: 0.1s; }
+.plot-category-card:nth-child(2) { animation-delay: 0.2s; }
+.plot-category-card:nth-child(3) { animation-delay: 0.3s; }
+.plot-category-card:nth-child(4) { animation-delay: 0.4s; }
+.plot-category-card:nth-child(5) { animation-delay: 0.5s; }
+.plot-category-card:nth-child(6) { animation-delay: 0.6s; }
+
+.zone-showcase-card:nth-child(1) { animation-delay: 0.1s; }
+.zone-showcase-card:nth-child(2) { animation-delay: 0.2s; }
+.zone-showcase-card:nth-child(3) { animation-delay: 0.3s; }
+.zone-showcase-card:nth-child(4) { animation-delay: 0.4s; }
+.zone-showcase-card:nth-child(5) { animation-delay: 0.5s; }
+.zone-showcase-card:nth-child(6) { animation-delay: 0.6s; }
